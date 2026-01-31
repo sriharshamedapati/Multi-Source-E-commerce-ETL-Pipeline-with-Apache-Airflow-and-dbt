@@ -1,0 +1,11 @@
+# Orchestration & Database Providers
+apache-airflow-providers-postgres
+apache-airflow-providers-amazon
+
+# Extraction Tools
+pandas
+requests
+boto3
+
+# Transformation (dbt)
+dbt-postgres

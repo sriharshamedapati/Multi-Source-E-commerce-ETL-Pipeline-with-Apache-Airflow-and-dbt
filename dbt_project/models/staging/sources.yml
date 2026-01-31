@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: staging
+    database: dwh
+    schema: staging
+    tables:
+      - name: users
+      - name: products
+      - name: inventory
+      - name: orders

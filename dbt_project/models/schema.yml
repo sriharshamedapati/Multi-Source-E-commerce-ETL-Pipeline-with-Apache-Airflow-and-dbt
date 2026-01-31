@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: dim_users
+    description: "Cleaned user dimension table"
+    columns:
+      - name: user_id
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_products
+    description: "Enriched product dimension with stock levels"
+    columns:
+      - name: product_id
+        tests:
+          - unique
+          - not_null
+
+  - name: fct_orders
+    description: "Incremental fact table for sales"
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
